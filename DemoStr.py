@@ -17,9 +17,20 @@ print("MBC:2580".isalnum())
 print("MBC2580".isdecimal())
 print("2580".isdecimal())
 
-u = " spam and ham "
-result = u.strip()
+u = "<<< spam and ham >>>"
+result = u.strip("<> ")
 print(u)
 print(result)
+result = result.replace("spam", "spam egg")
+print(result)
+#productlist.csv, customer.tsv 
+result = "spam::egg::ham"
+lst = result.split("::")
+print(lst)
+print(":)".join(lst))
+print(strA.upper())
+print(strA.lower())
+
+
 
 
