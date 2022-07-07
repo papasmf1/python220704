@@ -15,6 +15,7 @@ class DemoWindow(QMainWindow):
 
         self.lineEdit = QLineEdit("", self)
         self.lineEdit.move(80, 20)
+        #시그널(textChanged) + 슬롯메서드(lineEditChagned)
         self.lineEdit.textChanged.connect(self.lineEditChanged)
 
         self.statusBar = QStatusBar(self)

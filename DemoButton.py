@@ -11,6 +11,7 @@ class DemoWindow(QMainWindow):
     def setupUI(self):
         btn1 = QPushButton("닫기", self)
         btn1.move(20, 20)
+        #시그널 + 슬롯 연결 수동 코드 
         btn1.clicked.connect(QCoreApplication.instance().quit)
 
 if __name__ == "__main__":
