@@ -15,12 +15,12 @@ class DemoForm(QDialog, form_class):
         self.setupUi(self)
         self.label.setText("첫번째 Qt데모~~")
 
-#진입점 체크
-if __name__ == "__main__":
-    #실행프로세스 생성
-    app = QApplication(sys.argv)
-    #화면 생성
-    demoWindow = DemoForm()
-    demoWindow.show()
-    #이벤트 대기
-    app.exec_() 
+#진입점 체크(Entry Point main())
+#if __name__ == "__main__":
+#실행프로세스 생성
+app = QApplication(sys.argv)
+#화면 생성
+demoWindow = DemoForm()
+demoWindow.show()
+#이벤트 대기
+app.exec_() 
